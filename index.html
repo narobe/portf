@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Narobe Kenea">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Narobe's Portfolio</title>
+</head>
+
+<body>
+  <div class="burger">
+    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6"
+      fill="rgba(0,0,0,0)" stroke-linecap="round">
+      <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+        <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+          fill="freeze" begin="start.begin" />
+        <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+          fill="freeze" begin="reverse.begin" />
+      </path>
+      <rect width="10" height="10" stroke="none">
+        <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+      </rect>
+      <rect width="10" height="10" stroke="none">
+        <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+        <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+      </rect>
+    </svg>
+    </svg>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <!-- <div class="logo">
+      <p><span class="name">Narobe Kenea</span><br><span class="proffession">Web Designer | Developer</span></p>
+    </div> -->
+      <li><a href="#service">Service</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="home" id="home">
+    <div class="socials">
+      <div class="linkdein">
+        <a href="https://www.linkedin.com/in/narobekenea">
+          <img src="./icons/linkedin_icon_white.svg" alt="">
+        </a>
+      </div>
+      <div class="telegram"><a href="https://t.me/Sylenthique">
+          <img src="./icons/telegram_logo.svg" alt="">
+        </a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/narobe">
+          <img src="./icons/github_icon_white.svg" alt="">
+        </a>
+      </div>
+      <div class="google">
+        <a href="mailto:narobekenea@gmail.com">
+          <img src="./icons/Gmail.svg" alt="">
+        </a>
+      </div>
+
+    </div>
+    <div class="description">
+      <span class="hello">Hello, I am</span>
+      <h1>Narobe Kenea</h1>
+      <span class="proffession">Web Designer | Developer</span>
+      <a href="Narobe's Resume.pdf" download>Download My Resume</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="container col">
+      <div class="box">
+        <h3>Who am I ?</h3>
+        <p class="title">A Web Developer / Designer</p>
+        <span class="small--gray--text">I'am passionate on creating amazing websites.
+          I'm here to help you to connect with peoples by developing creative UI.</span>
+        <a class="download" href="Narobe's Resume.pdf" download>Download My CV</a>
+      </div>
+      <div class="box">
+        <h3>Personal Info</h3>
+        <ul>
+          <li><span>Email : </span><a href="mailto:narobekenea@gmail.com">narobekenea@gmail.com</a></li>
+          <li><span>Phone : </span><a href="tel:+251964534544">+251964534544</a></li>
+          <li><span>Linkedin : </span><a class="gray" href="https://linkedin.com/narobekenea">Narobe</a></li>
+          <li><span>Github : </span><a class="gray" href="https://github.com/narobe">Narobe</a></li>
+        </ul>
+        <div class="socials">
+          <div class="linkdein">
+            <a href="https://www.linkedin.com/in/narobekenea">
+              <img src="./icons/linkedin_icon.svg" alt="">
+            </a>
+          </div>
+          <div class="telegram"><a href="https://t.me/Sylenthique">
+              <img src="./icons/telegram_logo.svg" alt="">
+            </a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/narobe">
+              <img src="./icons/github_icon.svg" alt="">
+            </a>
+          </div>
+          <div class="google">
+            <a href="mailto:narobekenea@gmail.com">
+              <img src="./icons/Gmail.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="box">
+        <h3>My Expertise</h3>
+        <div class="sub-container">
+          <div class="icon"><img src="./icons/html tag.svg" alt=""></div>
+          <div>
+            <h5>Web Development</h5>
+            <span class="small--gray--text">Be live online and wide your scope</span>
+          </div>
+        </div>
+        <div class="sub-container">
+          <div class="icon"><img src="./icons/ui design.svg" alt=""></div>
+          <div>
+            <h5>
+              UI Design</h5>
+            <span class="small--gray--text">Better besign for best user experience</span>
+          </div>
+        </div>
+        <div class="sub-container">
+          <div class="icon"><img src="./icons/boost.svg" alt=""></div>
+          <div>
+            <h5>Improvement </h5>
+            <span class="small--gray--text"> Boost your oppurtinity on the Digital World</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="resume" id="resume">
+    <h2>My Resume</h2>
+    <div class="box col">
+      <div class="box-child">
+        <h3>Education</h3>
+        <h4>2022 - Present </h4>
+        <p>Web Developmenet and Database Addminstration </p>
+        <span class="small--gray--text">This course helped me a lot to use my skills.
+          I learn to code websites and developing CMS websites.</span>
+      </div>
+      <div class="box-child">
+        <h3>Skills</h3>
+        <div class="body">
+          <div class="name">HTML5 & CSS3</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 97%;">
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="name">JavaScript</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 47%;">
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="name">Tailwindcss</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 77%;">
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="name">Wordpress</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 57%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-child">
+        <h3>Languages</h3>
+        <div class="body">
+          <div class="name">English</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 77%;">
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="name">Amharic</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 97%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service" id="service">
+    <h2>My Services</h2>
+    <div class="services col">
+      <div class="box">
+        <div class="icon"><img src="./icons/development_programming_web_icon.svg" alt=""></div>
+        <h3>Website Development</h3>
+        <span class="small--gray--text">For simple website, portfolio or any other stuffs. I'll connect you to the world
+          using my creative skills.
+          Either coded or Worpress site.</span>
+      </div>
+      <div class="box">
+        <div class="icon"><img src="./icons/ui-ux-design.svg" alt=""></div>
+        <h3>Website Designing</h3>
+        <span class="small--gray--text">If you are looking for a great design for your site you are with the right
+          person. I design Landing page
+          Full site</span>
+      </div>
+      <div class="box">
+        <div class="icon"><img src="./icons/progress_icon.svg" alt=""></div>
+        <h3>Customization</h3>
+        <span class="small--gray--text">If you are bored or an issue occured on your website don't worry I'll fix it for
+          you. </span>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2>Some of my projects</h2>
+    <div class="gallery">
+      <a class="gallery--child gallery--child--1" href="./pages/age-calculator-app-main/age-caalc.html"><img
+          src="./img/agecalculator.JPG" alt="">
+      </a>
+      <a class="gallery--child gallery--child--2" href="./pages/testimonial grid/index.html"><img
+          src="./img/testimonialgrid.JPG" alt=""></a>
+      <a class="gallery--child gallery--child--3" href="./pages/to-do list/todo.html"><img src="./img/todolist.JPG"
+          alt=""></a>
+      <a class="gallery--child gallery--child--4" href="./pages/celcius-converter/"><img
+          src="./img/temptature converter.jpg" alt=""></a>
+    </div>
+  </section>
+  <section class="contact col" id="contact">
+    <form action="POST" netlify>
+      <h3>Send a Message</h3>
+      <input type="text" placeholder="Name *">
+      <input type="email" placeholder="Email *">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+    <div class="address">
+      <h3>Get in touch</h3>
+      <div class="phone">
+        <div class="icon"></div>
+        <div>Phone: <br> <span><a href="tel:+251964534544">+251964534544</a></span></div>
+      </div>
+      <div class="phone">
+        <div class="icon"></div>
+        <div>Address: <br><span>Addis Ababa-Ethiopia</span></div>
+      </div>
+      <div class="phone">
+        <div class="icon"></div>
+        <div>Email: <br> <span><a href="mailto:narobekenea@gmail.com">narobekenea@gmail.com</a></span></div>
+      </div>
+      <div class="socials">
+        <div class="linkdein">
+          <a href="https://www.linkedin.com/in/narobekenea">
+            <img src="./icons/linkedin_icon.svg" alt="">
+          </a>
+        </div>
+        <div class="telegram"><a href="https://t.me/Sylenthique">
+            <img src="./icons/telegram_logo.svg" alt="">
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/narobe">
+            <img src="./icons/github_icon.svg" alt="">
+          </a>
+        </div>
+        <div class="google">
+          <a href="mailto:narobekenea@gmail.com">
+            <img src="./icons/Gmail.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2023 CREATED BY <a href="mailto:narobekenea@gmail.com">NAROBE KENEA</a>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

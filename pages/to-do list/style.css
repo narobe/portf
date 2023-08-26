@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, #6f22a1, #d42a9b);
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 15rem;
+}
+
+button{
+    border: none;
+}
+
+header, form {
+    font-size: 1.5rem;
+}
+
+form button {
+    font-size: x-small;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #00d6d6;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+form button:hover{
+    background: #00e0e0;
+    color: white;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todo-list{
+    min-width: 26rem;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background: white;
+    transition: all 0.3s ease;
+}
+.todo li{
+    flex: 1;
+}
+
+.todo-item{
+    padding: 0.5rem;
+}
+.trash-btn,.complete-btn{
+    background: #00d6d6;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.trash-btn:hover, .complete-btn:hover{
+    background: white;
+    color: #00d6d6;
+    border-left: 2px solid #00d6d6;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.fall{
+    transition: all 0.7s ease-in-out;
+    transform: translateY(8rem) rotateZ(30deg);
+    transform-origin: center;
+    opacity: 0;
+}
+
+.select{
+    display: inline;
+}
+.filter-todo{
+    -webkit-appearance: none;
+    padding: 1rem;
+}

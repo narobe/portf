@@ -1,0 +1,197 @@
+@font-face {
+  font-family: poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsbold;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: poppinsextrabold;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: poppinsbolditalic;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: poppinsitalic;
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: poppinsextrabolditalic;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Light-grey);
+}
+
+main {
+  width: 440px;
+  max-width: 100%;
+  background-color: var(--White);
+  padding: 30px;
+  border-radius: 15px;
+  border-bottom-right-radius: 150px;
+  position: relative;
+}
+
+.data-input {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid var(--Light-grey);
+  font-size: 10px;
+  padding-bottom: 25px;
+
+}
+
+.data-input .each {
+  font-family: poppinsbold;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+.each {
+  margin-right: 30px;
+}
+
+.each label {
+  letter-spacing: 2px;
+}
+
+.each input {
+  font-family: poppinsbold;
+  width: 70px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 8%);
+  outline: none;
+  border-radius: 5px;
+}
+
+.each .required {
+  font-size: 9px;
+  font-family: poppinsitalic;
+  color: var(--Light-red);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 30px;
+  border: none;
+  background-color: var(--Purple);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 22%;
+}
+
+.btn:hover {
+  background-color: var(--Off-black);
+}
+
+.btn img {
+  width: 35px;
+  height: 30px;
+}
+
+.data-output {
+  font-family: poppinsextrabolditalic;
+  padding-top: 2.5rem;
+  line-height: 65px;
+  font-size: 60px;
+}
+
+.data-output .each .value {
+  color: var(--Purple);
+}
+
+@media screen and (max-width : 540px) {
+  main {
+    width: 90%;
+    max-width: 100%;
+    border-radius: 15px 15px 120px 15px;
+    background-color: var(--White);
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .each input {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid var(--Off-white);
+    border-radius: 5px;
+  }
+
+  .each .required {
+    word-wrap: nowrap;
+    font-size: 7px;
+  }
+
+  .data-input {
+    padding-bottom: 40px;
+    border-radius: 0;
+  }
+
+  .btn {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Purple);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 45%;
+    top: 28%;
+  }
+
+  .btn img {
+    width: 25px;
+  }
+
+  .data-output {
+    font-family: poppinsextrabolditalic;
+    padding-top: 2.5rem;
+    line-height: 50px;
+    font-size: 48px;
+  }
+}

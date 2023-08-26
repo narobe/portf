@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #9f5ace, #444444);
+    color: #fff;
+}
+
+input {
+    display: inline;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    min-width: 5rem;
+    font-size: 28px;
+}
+
+.input-clear {
+    display: none;
+    border: none;
+    color: #696969;
+    font-size: 26px;
+}
+
+.output,
+.prev-input {
+    min-width: 5rem;
+    font-size: 28px;
+}
+
+.output span {
+    color: #c2c2c2;
+    font-size: 24px;
+}
+
+.prev-input {
+    margin: 0;
+    color: rgba(204, 204, 204, 0.7);
+    display: none;
+}
+
+button {
+    border: none;
+    padding: 4px 8px;
+    border-bottom: 4px solid #0640ff;
+    border-radius: 4px;
+    color: #4d4d4d;
+    -webkit-text-stroke: 0.4px;
+    -webkit-text-stroke-color: #7994ee;
+    font-size: 32px;
+    margin-bottom: 12rem;
+}
+
+@media screen and (max-width:570px) {
+    input {
+        -webkit-appearance: none;
+        appearance: none;
+        max-width: 100vw;
+        padding: 4px;
+        font-size: 26px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+
+    }
+
+    .input-clear {
+        display: block;
+        max-width: 100vw;
+        border: none;
+        border-radius: 0;
+        color: #696969;
+        font-size: 26px;
+    }
+
+    main {
+        width: 100vw;
+        max-height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .output,
+    .prev-input {
+        max-width: 100vh;
+        font-size: 26px;
+        padding: 4px;
+        margin: 0;
+    }
+
+    .prev-input {
+        color: rgba(204, 204, 204, 0.7);
+        display: none;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        border-bottom: 4px solid #003cff;
+        border-radius: 4px;
+        color: #616161;
+        -webkit-text-stroke: 0.2px;
+        -webkit-text-stroke-color: #000000;
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+}
