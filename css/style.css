@@ -13,7 +13,7 @@ html {
 
 
 @font-face {
-  font-family: poppins;
+  font-family: poppins;     
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
@@ -453,6 +453,11 @@ footer a:hover {
   .home {
     padding: 10px;
   }
+
+  .service .services {
+    display: flex;
+    gap: 40px;
+}
 
   .col {
     flex-direction: column;
